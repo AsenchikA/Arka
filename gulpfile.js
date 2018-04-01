@@ -67,7 +67,7 @@ gulp.task('html', function() {
 // ЗАДАЧА: Копирование изображений
 gulp.task('img', function () {
   return gulp.src([
-        dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',      // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+        dirs.source + '/img/**/*.{gif,png,jpg,JPG,jpeg,svg}'  // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       ],
       {since: gulp.lastRun('img')}                          // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -154,6 +154,10 @@ gulp.task('js', function () {
       // список обрабатываемых файлов
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
+      dirs.source + '/js/picker.js',
+      dirs.source + '/js/picker.date.js',
+      dirs.source + '/js/picker_ru.js',
+      dirs.source + '/js/owl.carousel.min.js',
       dirs.source + '/js/script.js',
     ])
     .pipe(plumber({ errorHandler: onError }))

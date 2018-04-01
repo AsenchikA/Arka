@@ -1,0 +1,29 @@
+.row(@align : center, @justify: flex-start)  {
+	display: flex;
+	align-items: @align;
+	justify-content: @justify;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-(@n) {
+  width: @n / 12 * 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-offset-(@n) {
+  margin-left: @n / 12 * 100%;
+}
+
+.container {
+
+    @media(min-width: @screen-sm){
+      max-width: @screen-sm;
+    }
+
+    @media(min-width: @screen-lg){
+      max-width: @screen-lg;
+      margin: 0 auto;
+    }
+}

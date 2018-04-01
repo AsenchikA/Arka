@@ -1,0 +1,30 @@
+.rooms-list {
+    &__arrow {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        background: transparent;
+        border: 0;
+        border-top: 2px solid @primary;
+        border-right: 2px solid @primary;
+        cursor: pointer;
+        z-index: 2;
+        outline: none;
+        &--prev {
+            right: 330px;
+            transform: rotate(-135deg);
+        }
+        &--prev-hidden {
+            display: none;
+        }
+        &--next {
+            right: 0;
+            transform: rotate(45deg);
+        }
+        &--next-hidden {
+            display: none;
+        }
+    }
+}

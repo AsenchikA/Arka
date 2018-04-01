@@ -1,0 +1,29 @@
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__inner {
+        .container;
+        .row(center, flex-start);
+    }
+    &__logo {
+        .col-(1);
+    }
+    &__main-nav {
+        .col-offset-(4);
+        .col-(5);
+    }
+    &__contacts {
+        .col-(2);
+    }
+    &__contacts-phone {
+        display: block;
+        margin-bottom: 12px;
+        text-decoration: none;
+        color: @text;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

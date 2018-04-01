@@ -38,10 +38,13 @@
     "merge-stream": "^1.0.1",
     "vinyl-buffer": "^1.0.0"
   },
-    "config": {
+  "config": {
     "directories": {
       "source": "./src",
       "build": "./build"
     }
+  },
+  "dependencies": {
+    "normalize.less": "^1.0.0"
   }
 }

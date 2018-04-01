@@ -1,0 +1,136 @@
+.room-item {
+    .row(flex-start, flex-start);
+
+    &__photos {
+        position: relative;
+        .col-(8);
+    }
+    &__main-photo {
+        height: 550px;
+        margin-bottom: 30px;
+        & img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+    }
+    &__gallery {
+        .row(space-between, center);
+        margin: 0;
+        & img {
+            cursor: pointer;
+        }
+    }
+    &__gallery-item {
+        .col-(3);
+        height: 110px;
+        object-fit: cover;
+        & img {
+            width: 100%;
+        }
+    }
+    &__price {
+        position: absolute;
+        top: 8px;
+        right: 1px;
+        width: 170px;
+        height: 50px;
+        background-color: @white;
+        line-height: 50px;
+        text-align: center;
+        box-shadow: -2px 2px 9px 1px rgba(0, 0, 0, 0.23);
+        z-index: 2;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -14px;
+            width: 0;
+            height: 0;
+            border:7px solid transparent;
+            border-left: 7px solid @secondary-text;
+            border-top: 7px solid @secondary-text;
+        }
+    }
+    &__info {
+        .col-(4);
+        padding-left: 40px;
+    }
+    &__info-description {
+        &--hidden {
+            display: none;
+        }
+    }
+    &__book-form {
+        &--hidden.book-form {
+            display: none;
+        }        
+    }
+    &__title {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 24px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__description {
+        font-size: @small-size;
+        margin-bottom: 35px;
+    }
+    &__advantages {
+        margin-bottom: 60px;
+        font-size: @small-size;
+        list-style: none;
+    }
+    &__advantages-item {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        &:before {
+            content: '\2014';
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__dates {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        border: 1px solid @primary;
+        padding: 10px 0;
+        margin-bottom: 40px;
+    }
+    &__dates-date {
+        position: relative;
+        width: 50%;
+        padding: 0 10px;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/icons/calendar.svg);
+            background-size: 24px 24px;
+            z-index: -1;
+        }
+    }
+    &__dates-date-check-out {
+        .picker {
+            left: -171px;
+        }
+    }
+    &__dates-date-caption {
+        position: absolute;
+        font-size: 12px;
+        color: @secondary-text;
+    }
+    &__btn {
+        .col-offset-(3);
+    }
+}

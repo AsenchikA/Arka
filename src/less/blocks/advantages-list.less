@@ -1,0 +1,56 @@
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__item {
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+        }
+        &--quiet:before {
+            top: 3px;
+            width: 48px;
+            height: 42px;
+            background-image: url(../img/icons/speaker.svg);
+            background-size: 48px 42px;
+        }
+        &--benefit:before {
+            width: 40px;
+            height: 48px;
+            background-image: url(../img/icons/percent.svg);
+            background-size: 40px 48px;
+        }
+        &--place:before {
+            width: 48px;
+            height: 48px;
+            background-image: url(../img/icons/placeholder.svg);
+            background-size: 48px 48px;
+        }
+        &--comfort:before {
+            width: 34px;
+            height: 48px;
+            background-image: url(../img/icons/shower.svg);
+            background-size: 34px 48px;
+        }
+        &--wi-fi:before {
+            top: 6px;
+            width: 48px;
+            height: 36px;
+            background-image: url(../img/icons/wifi.svg);
+            background-size: 48px 36px;
+        }
+    }
+    &__item-title {
+        margin-bottom: 20px;
+    }
+    &__item-description {
+        color: @secondary-text;
+    }
+}

@@ -1,0 +1,37 @@
+.picker__input,
+  .picker__input.picker__input--active {
+    border: 0;
+    font-size: 14px;
+  }
+
+  .picker--opened .picker__holder {
+    width: 344px;
+  }
+
+  .picker__nav--next:before, 
+  .picker__nav--prev:before {
+    border-right-color: @primary;
+  }
+
+  .picker__nav--next:before {
+    border-left-color: @primary;
+  }
+
+  .picker--focused .picker__day--selected, 
+  .picker__day--selected, 
+  .picker__day--selected:hover {
+    background: @primary;
+    border: 0;
+  }
+
+  .picker {
+    bottom: -20px;
+    left: 0;
+  }
+
+  .picker__input {
+    height: 100%;
+    padding-top: 15px;
+    background-color: transparent;
+    cursor: pointer;
+  }

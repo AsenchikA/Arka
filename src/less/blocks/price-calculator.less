@@ -1,0 +1,21 @@
+.price-calculator {
+    margin-bottom: 45px;
+    &__row {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &:not(.price-calculator__row--total):after {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #efefef;
+        }
+    }
+    &__row--total {
+        font-weight: 700;
+    }
+}

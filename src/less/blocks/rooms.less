@@ -1,8 +1,11 @@
 .rooms {
-    padding-top: 35px;
+    padding-top: 0px;
     padding-bottom: 45px;
+
+    @media (min-width: @screen-lg) {
+        padding-top: 35px;
+    }
     &__inner {
         .container;
-        height: 710px;
     }
 }

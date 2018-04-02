@@ -1,9 +1,18 @@
 .map-and-contacts {
     position: relative;
+    &__map {
+        display: none;
+        @media (min-width: @screen-lg) {
+            display: block;
+        }
+    }
     &__contacts {
-        position: absolute;
-        top: 165px;
-        left: 50%;
-        transform: translateX(-131%);
+        @media (min-width: @screen-lg) {
+            position: absolute;
+            top: 165px;
+            left: 50%;
+            transform: translateX(-585px);
+            width: 370px;
+        }
     }
 }

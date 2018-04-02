@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header" id="page-header">
         <div class="page-header__inner">
             <div class="page-header__logo logo">
                 <img src="img/icons/logo.svg" width="70" height="70" alt="">
@@ -36,10 +36,12 @@
                 <a class='page-header__contacts-phone' href="tel:+7 (812) 272-64-93">+7 (812) 272-64-93</a>
                 <a class='page-header__contacts-phone' href="tel:+7 (921) 378-73-65">+7 (921) 378-73-65</a>
             </div>
+            <button class="btn page-header__btn"><a href="#rooms">Посмотреть номера</a></button>
+            <a href="" class="toggler page-header__toggler" id="header-toggler"><span></span></a>
         </div>
     </header>
     <main>
-        <div class="promo">
+        <div class="promo" id="promo">
             <div class="promo__inner">
                 <h1 class="promo__title">Мини-отель Арка</h1>
                 <div class="promo__subtitle">в сердце Санкт-Петербурга</div>
@@ -60,26 +62,26 @@
         </div>
         <div class="advantages">
             <div class="advantages__inner">
-                <ul class="advantages-list">
+                <ul class="advantages-list owl-carousel" id='advantages'>
                     <li class="advantages-list__item advantages-list__item--quiet">
                         <div class="advantages-list__item-title">Тихо и спокойно</div>
-                        <div class="advantages-list__item-description">У нас всего пять тихих номеров с окнами во двор</div>
+                        <div class="advantages-list__item-description">У&#160;нас всего пять тихих номеров с&#160;окнами во&#160;двор.</div>
                     </li>
                     <li class="advantages-list__item advantages-list__item--benefit">
                         <div class="advantages-list__item-title">Выгодно</div>
-                        <div class="advantages-list__item-description">Даем скидку 10% при заказе через сайт</div>
+                        <div class="advantages-list__item-description">Даем скидку&#160;10% при заказе через сайт.</div>
                     </li>
                     <li class="advantages-list__item advantages-list__item--place">
                         <div class="advantages-list__item-title">Удобное расположение</div>
-                        <div class="advantages-list__item-description">Достопримечательности в 5-10 минутах ходьбы</div>
+                        <div class="advantages-list__item-description">Достопримечательности в&#160;5-10 минутах ходьбы.</div>
                     </li>
                     <li class="advantages-list__item advantages-list__item--comfort">
                         <div class="advantages-list__item-title">Комфортно</div>
-                        <div class="advantages-list__item-description">Отдельная уборная и душ в каждом номере</div>
+                        <div class="advantages-list__item-description">Отдельная уборная и&#160;душ в&#160;каждом номере.</div>
                     </li>
                     <li class="advantages-list__item advantages-list__item--wi-fi">
                         <div class="advantages-list__item-title">Wi-Fi</div>
-                        <div class="advantages-list__item-description">Бесплатный Wi-Fi на всей территории отеля</div>
+                        <div class="advantages-list__item-description">Бесплатный Wi-Fi на&#160;всей территории отеля.</div>
                     </li>
                 </ul>
             </div>
@@ -97,17 +99,13 @@
                                 <img src="img/photos/Double/double1.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Double/double2.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Double/double3.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Double/double4.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen3.jpg" class="room-item__gallery-item" alt="">
                             </div>
                         </div>
                         <div class="room-item__info">
                             <div class="room-item__title">DOUBLE</div>
                             <div class="room-item__info-description">
-                                <div class="room-item__description">Три уютных номера с двумя односпальными кроватями, которые могут быть раздельными или как
-                                    одна большая двуспальная кровать. Площадь номеров: 11 м².</div>
+                                <div class="room-item__description">Три уютных номера с&#160;двумя односпальными кроватями, которые могут быть раздельными или как одна большая двуспальная кровать. Площадь номеров: 11&#160;м&#178;.</div>
                                 <ul class="room-item__advantages">
                                     <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
                                     <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
@@ -186,15 +184,12 @@
                                 <img src="img/photos/Twin/twin2.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Twin/twin3.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen3.jpg" class="room-item__gallery-item" alt="">
                             </div>
                         </div>
                         <div class="room-item__info">
                             <div class="room-item__title">TWIN</div>
                             <div class="room-item__info-description">
-                                <div class="room-item__description">Комфортый номер для двоих. Идентичен номерам DOUBLE с одним отличием – кровати располагаются
-                                    раздельно и их нельзя сдвинуть. Площадь номера: 11 м².</div>
+                                <div class="room-item__description">Комфортый номер для двоих. Идентичен номерам DOUBLE с&#160;одним отличием&#160;&#8212; кровати располагаются раздельно и&#160;их&#160;нельзя сдвинуть. Площадь номера: 11&#160;м&#178;.</div>
                                 <ul class="room-item__advantages">
                                     <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
                                     <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
@@ -274,15 +269,12 @@
                                 <img src="img/photos/Triple/triple3.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Triple/triple4.jpg" class="room-item__gallery-item" alt="">
                                 <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen3.jpg" class="room-item__gallery-item" alt="">
                             </div>
                         </div>
                         <div class="room-item__info">
                             <div class="room-item__title">TRIPLE</div>
                             <div class="room-item__info-description">
-                                <div class="room-item__description">Уютный номер на три кровати. Подойдет как для семьи, так и для небольшой дружной компании.
-                                    Площадь номера: 18 м².</div>
+                                <div class="room-item__description">Уютный номер на&#160;три кровати. Подойдет как для семьи, так и&#160;для небольшой дружной компании. Площадь номера: 18&#160;м&#178;.</div>
                                 <ul class="room-item__advantages">
                                     <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
                                     <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
@@ -398,54 +390,51 @@
                 <div class="faq__questions">
                     <div class="faq__question">
                         <div class="faq__question-question">Возможен ли трансфер?</div>
-                        <div class="faq__question-answer">Отдельная услуга – организация трансфера от/до аэропорта.</div>
+                        <div class="faq__question-answer">Организация трансфера от/до аэропорта&#160;&#8212; это отдельная услуга.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Можно ли заселяться с животными?</div>
-                        <div class="faq__question-answer">Иногда мы идем на встречу при условии соблюдения тишины и порядка. Обычно это касается маленьких
-                            животных в переносках.</div>
+                        <div class="faq__question-answer">Иногда мы&#160;идем на&#160;встречу при условии соблюдения тишины и&#160;порядка. Обычно это касается маленьких животных в&#160;переносках.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли завтрак?</div>
-                        <div class="faq__question-answer">Дополнительно можно заказать завтрак. Стоимость – 250 рублей.</div>
+                        <div class="faq__question-answer">Дополнительно можно заказать завтрак. Стоимость&#160;&#8212; 250&#160;рублей.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Можно ли отменить заказ?</div>
-                        <div class="faq__question-answer">Возможна предварительная отмена заказа. Подробнее можно уточнить у менеджера.</div>
+                        <div class="faq__question-answer">Возможна предварительная отмена заказа. Подробнее можно уточнить у&#160;менеджера.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Как до нас добраться?</div>
-                        <div class="faq__question-answer">Отель находится по адресу: Санкт-Петербург, Большая Конюшенная улица, дом 17. Нужно пройти к арке
-                            и набрать 13, для того чтобы войти во двор. После второй арки необходимо повернуть направо. Код
-                            от входной двери: 13.</div>
+                        <div class="faq__question-answer">Отель находится по&#160;адресу: Санкт-Петербург, Большая Конюшенная улица, дом 17. Нужно пройти к&#160;арке и&#160;набрать&#160;13, для того чтобы войти во&#160;двор. После второй арки необходимо повернуть направо. Код от&#160;входной двери: 13.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли альтернативное бронирование?</div>
-                        <div class="faq__question-answer">Да, мы рассматриваем варианты альтернативного бронирования. Пишите нам на почту
-                            <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a>
-                        </div>
+                        <div class="faq__question-answer">Да, мы&#160;рассматриваем варианты альтернативного бронирования. Пишите нам на&#160;почту <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a></div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли условия для людей с ограниченными возможностями?</div>
-                        <div class="faq__question-answer">К сожалению, архитектура дома не предполагает установку пандусов и дополнительных приспособлений.
-                            Принять вас будет затруднительно.</div>
+                        <div class="faq__question-answer">К&#160;сожалению, архитектура дома не&#160;предполагает установку пандусов и&#160;дополнительных приспособлений. Принять вас будет затруднительно.</div>
                     </div>
                 </div>
+                <div class="faq__back"><a href="#rooms">Вернуться к номерам</a></div>
             </div>
         </div>
         <div class="map-and-contacts" id="contacts">
-            <div class="map">
+            <div class="map-and-contacts__map map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.591950447831!2d30.321120116143472!3d59.93891288187628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fceae1c83%3A0xe98045a979b09260!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522509242607"
                     width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="map-and-contacts__contacts contacts">
-                <div class="contacts__item contacts__item--address">Большая Конюшенная 17</div>
-                <div class="contacts__item contacts__item--phones">
-                    <a href="tel:+7 (812) 272-64-93">+7 (812) 272-64-93</a>
-                    <a href="tel:+7 (921) 378-73-65">+7 (921) 378-73-65</a>
-                </div>
-                <div class="contacts__item contacts__item--mail">
-                    <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a>
+                <div class="contacts__inner">
+                    <div class="contacts__item contacts__item--address">Большая Конюшенная 17</div>
+                    <div class="contacts__item contacts__item--phones">
+                        <a href="tel:+7 (812) 272-64-93">+7 (812) 272-64-93</a>
+                        <a href="tel:+7 (921) 378-73-65">+7 (921) 378-73-65</a>
+                    </div>
+                    <div class="contacts__item contacts__item--mail">
+                        <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a>
+                    </div>
                 </div>
             </div>
         </div>

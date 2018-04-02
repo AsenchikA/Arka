@@ -1,21 +1,23 @@
 .faq {
     padding-top: 50px;
-    background-color: @secondary;
+    background-color: #4A5583;
     color: @white;
     overflow: hidden;
 
     &__inner {
         .container;
         position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            right: -235px;
-            width: 671px;
-            height: 635px;
-            background-image: url(../img/faq.png);
-            background-repeat: no-repeat;
+        @media (min-width: @screen-lg) {
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                right: -235px;
+                width: 671px;
+                height: 635px;
+                background-image: url(../img/faq.png);
+                background-repeat: no-repeat;
+            }
         }
     }
     &__questions {
@@ -28,24 +30,89 @@
         z-index: 2;
     }
     &__question {
-        margin-bottom: 50px;
-        &:nth-child(2n+1) {
-            .col-offset-(1);
-            .col-(5);
+        margin-bottom: 60px;
+        .col-(12);
+
+        @media (min-width: @screen-lg) {
+            margin-bottom: 50px;
+            &:nth-child(2n+1) {
+                .col-offset-(1);
+                .col-(5);
+            }
+            &:nth-child(2n) {
+                .col-(6);
+            }
         }
-        &:nth-child(2n) {
-            .col-(6);
         }
-    }
     &__question-question {
         margin-bottom: 15px; 
         font-weight: 500;
-        font-size: @accent-size;
+        font-size: 14px;
+
+        @media (min-width: @screen-lg) {
+            font-size: @accent-size;
+        }
     }
     &__question-answer {
-        max-width: 350px;
+        font-size: 14px;
+
+        @media (min-width: @screen-lg) {
+            font-size: @text-size;
+            max-width: 350px;
+        }
         & a {
             color: @primary;
+        }
+    }
+    &__back {
+        display: none;
+        @media (min-width: @screen-lg) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 190px;
+            height: 95px;
+            overflow: hidden;
+            text-align: center;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 190px;
+                height: 190px;
+                border-radius: 50%;
+                background-color: @primary;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 20px;
+                height: 20px;
+                border-left: 1px solid @white;
+                border-bottom: 1px solid @white;
+                transform: rotate(135deg);
+                z-index: 2;
+            }
+            & a {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                padding-top: 55px;
+                color: @white;
+                font-size: 14px;
+                text-decoration: none;
+                z-index: 2;
+            }
         }
     }
 }

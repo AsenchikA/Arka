@@ -17,8 +17,7 @@ $(document).ready(function () {
 
   anchorScroll('#main-nav');
   anchorScroll('.promo');
-  anchorScroll('.page-header__btns');
-  anchorScroll('#faq');
+  anchorScroll('.btn-back'); 
 
   $('#header-toggler').on('click', function(e) {
     e.preventDefault();
@@ -71,6 +70,7 @@ $(document).ready(function () {
     navText: ['', ''],
     items: 1,
     mouseDrag: false,
+    touchDrag: false,
     autoHeight: true
   });
 
@@ -86,10 +86,9 @@ $(document).ready(function () {
       },
       1200:{
           items:4,
-          loop:false,
           dots: false
       }
-  }
+    }
   });
 
   // выбранная фото из галереи -> в большое фото
@@ -110,34 +109,45 @@ $(document).ready(function () {
     autoHeight: true
   });
 
-  $('input[type="date"]').pickadate({
-    today: '',
-    clear: '',
-    close: ''
+  var id;
+  $(window).resize(function () {
+    clearTimeout(id);
+    id = setTimeout(initializeOwlAdvantages, 500);
   });
 
-  // показываем/скрываем блок брони
-  $('[id ^= book]').on('click', function (e) {
-    var numberType = e.target.id.slice(5);
+
+
+  function initializeDatepicker() {
+    if (document.body.clientWidth >= 1200) {
+      $('input[type="date"]').pickadate({
+        today: '',
+        clear: '',
+        close: ''
+      });
+    }
+  }
+  // initilize onload
+  initializeDatepicker();
+
+  function toggleClassesRoom(numberType) {
     $('.active #' + numberType + ' .room-item__info-description')[0].classList.toggle('room-item__info-description--hidden');
     $('.active #' + numberType + ' .room-item__book-form')[0].classList.toggle('room-item__book-form--hidden');
     $('.rooms-list__arrow--prev')[0].classList.toggle('rooms-list__arrow--prev-hidden');
     $('.rooms-list__arrow--next')[0].classList.toggle('rooms-list__arrow--next-hidden');
     $('.active #' + numberType + ' .book-form__close')[0].classList.toggle('book-form__close--hidden');
     if (document.body.clientWidth < 1200) {
-      $owlGallery = $('body').find('.active #' + numberType + ' .room-item__gallery');
-      // console.log($owlGallery);
-      // $('.active #' + numberType + ' .room-item__gallery')[0].classList.remove('owl-loaded');
-      $owlGallery.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
-      $owlGallery.find('.owl-stage-outer').children().unwrap();
+      $('.active #' + numberType)[0].classList.toggle('room-item--book');
     }
+  }
+
+  // показываем/скрываем блок брони
+  $('[id ^= book]').on('click', function (e) {
+    var numberType = e.target.id.slice(5);
+    toggleClassesRoom(numberType);
+    $('body,html').animate({ 'scrollTop': $('#rooms').offset().top - 20 }, Math.abs($(document).scrollTop() - $('#rooms').offset().top) / 3);
   });
   $('.book-form__close').on('click', function (e) {
     var numberType = e.target.id.slice(14);
-    $('.active #' + numberType + ' .room-item__info-description')[0].classList.toggle('room-item__info-description--hidden');
-    $('.active #' + numberType + ' .room-item__book-form')[0].classList.toggle('room-item__book-form--hidden');
-    $('.rooms-list__arrow--prev')[0].classList.toggle('rooms-list__arrow--prev-hidden');
-    $('.rooms-list__arrow--next')[0].classList.toggle('rooms-list__arrow--next-hidden');
-    $('.active #' + numberType + ' .book-form__close')[0].classList.toggle('book-form__close--hidden');
+    toggleClassesRoom(numberType);
   });
 });

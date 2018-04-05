@@ -36,8 +36,9 @@
                 <a class='page-header__contacts-phone' href="tel:+7 (812) 272-64-93">+7 (812) 272-64-93</a>
                 <a class='page-header__contacts-phone' href="tel:+7 (921) 378-73-65">+7 (921) 378-73-65</a>
             </div>
-            <button class="btn page-header__btn"><a href="#rooms">Посмотреть номера</a></button>
-            <a href="" class="toggler page-header__toggler" id="header-toggler"><span></span></a>
+            <a href="" class="toggler page-header__toggler" id="header-toggler">
+                <span></span>
+            </a>
         </div>
     </header>
     <main>
@@ -45,9 +46,11 @@
             <div class="promo__inner">
                 <h1 class="promo__title">Мини-отель Арка</h1>
                 <div class="promo__subtitle">в сердце Санкт-Петербурга</div>
-                <div class="promo__description">Тихий отель на 5 номеров в «золотом треугольнике» Санкт-Петербурга. Удобное расположение, дружелюбный персонал,
-                    оптимальная цена, чистота и уют.</div>
-                <button class="btn promo__btn"><a href="#rooms">Посмотреть номера</a></button>
+                <div class="promo__description">Тихий отель на&#160;5&#160;номеров в&#160;&#171;золотом треугольнике&#187; Санкт-Петербурга. Удобное расположение,
+                    дружелюбный персонал, оптимальная цена, чистота и&#160;уют.</div>
+                <button class="btn promo__btn">
+                    <a href="#rooms">Посмотреть номера</a>
+                </button>
                 <div class="promo__raiting">
                     <div class="promo__raiting-item promo__raiting-item--tripadvisor">
                         <div class="promo__raiting-company"></div>
@@ -86,300 +89,305 @@
                 </ul>
             </div>
         </div>
-        <div class="rooms" id="rooms">
-            <div class="rooms__inner">
-                <div class="rooms-list owl-carousel" id='rooms-slider'>
-                    <div class="room-item" id='double'>
-                        <div class="room-item__photos">
-                            <div class="room-item__main-photo">
-                                <img src="img/photos/Double/double1.jpg" alt="">
+        <div class="rooms-and-reviews">
+            <div class="rooms" id="rooms">
+                <div class="rooms__inner">
+                    <div class="rooms-list owl-carousel" id='rooms-slider'>
+                        <div class="room-item" id='double'>
+                            <div class="room-item__photos">
+                                <div class="room-item__main-photo">
+                                    <img src="img/photos/Double/double1.jpg" alt="">
+                                </div>
+                                <div class="room-item__price">3 500 руб./сут.</div>
+                                <div class="room-item__gallery owl-carousel" id="gallery-double">
+                                    <img src="img/photos/Double/double1.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Double/double2.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Double/double3.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
+                                </div>
                             </div>
-                            <div class="room-item__price">3 500 руб./сут.</div>
-                            <div class="room-item__gallery owl-carousel" id="gallery-double">
-                                <img src="img/photos/Double/double1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Double/double2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Double/double3.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
-                            </div>
-                        </div>
-                        <div class="room-item__info">
-                            <div class="room-item__title">DOUBLE</div>
-                            <div class="room-item__info-description">
-                                <div class="room-item__description">Три уютных номера с&#160;двумя односпальными кроватями, которые могут быть раздельными или как одна большая двуспальная кровать. Площадь номеров: 11&#160;м&#178;.</div>
-                                <ul class="room-item__advantages">
-                                    <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
-                                    <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
-                                    <li class="room-item__advantages-item">Собственный душ и туалет</li>
-                                    <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
-                                    <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
-                                    <li class="room-item__advantages-item">Вентилятор</li>
-                                </ul>
-                                <div class="room-item__dates">
-                                    <div class="room-item__dates-date room-item__dates-date-check-in">
-                                        <div class="room-item__dates-date-caption">Заезд</div>
-                                        <input type="date" id='date-check-in'>
+                            <div class="room-item__info">
+                                <div class="room-item__title">DOUBLE</div>
+                                <div class="room-item__info-description">
+                                    <div class="room-item__description">Три уютных номера с&#160;двумя односпальными кроватями, которые могут быть раздельными
+                                        или как одна большая двуспальная кровать. Площадь номеров: 11&#160;м&#178;.</div>
+                                    <ul class="room-item__advantages">
+                                        <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
+                                        <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
+                                        <li class="room-item__advantages-item">Собственный душ и туалет</li>
+                                        <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
+                                        <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
+                                        <li class="room-item__advantages-item">Вентилятор</li>
+                                    </ul>
+                                    <div class="room-item__dates">
+                                        <div class="room-item__dates-date room-item__dates-date-check-in">
+                                            <div class="room-item__dates-date-caption">Заезд</div>
+                                            <input type="date" id='date-check-in'>
+                                        </div>
+                                        <div class="room-item__dates-date room-item__dates-date-check-out">
+                                            <div class="room-item__dates-date-caption">Выезд</div>
+                                            <input type="date" id='date-check-out'>
+                                        </div>
                                     </div>
-                                    <div class="room-item__dates-date room-item__dates-date-check-out">
-                                        <div class="room-item__dates-date-caption">Выезд</div>
-                                        <input type="date" id='date-check-out'>
+                                    <div class='price-calculator'>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
+                                            <div class="price-calculator__row-value">7 000 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">Скидка 10%</div>
+                                            <div class="price-calculator__row-value">-700 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row price-calculator__row--total">
+                                            <div class="price-calculator__row-descrription">Итого</div>
+                                            <div class="price-calculator__row-value">6 300 руб.</div>
+                                        </div>
                                     </div>
+                                    <button class='btn room-item__btn' id='book-double'>Забронировать</button>
                                 </div>
-                                <div class='price-calculator'>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
-                                        <div class="price-calculator__row-value">7 000 руб.</div>
+                                <div class="room-item__book-form room-item__book-form--hidden book-form">
+                                    <div class="book-form__close book-form__close--hidden" id="close-booking-double"></div>
+                                    <div class="book-form__check-in">
+                                        <input type="text" value="Заезд 12 Сентября" readonly>
                                     </div>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">Скидка 10%</div>
-                                        <div class="price-calculator__row-value">-700 руб.</div>
+                                    <div class="book-form__check-out">
+                                        <input type="text" value="Выезд 14 Сентября" readonly>
                                     </div>
-                                    <div class="price-calculator__row price-calculator__row--total">
-                                        <div class="price-calculator__row-descrription">Итого</div>
-                                        <div class="price-calculator__row-value">6 300 руб.</div>
+                                    <div class="book-form__days">
+                                        <input type="text" value="Кол.суток: 2" readonly>
                                     </div>
+                                    <div class="book-form__cost">
+                                        <input type="text" value="Стоимость: 6300 руб" readonly>
+                                    </div>
+                                    <div class="book-form__name">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="book-form__surname">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                    <div class="book-form__phone">
+                                        <input type="phone" placeholder="Телефон">
+                                    </div>
+                                    <div class="book-form__email">
+                                        <input type="e-mail" placeholder="e-mail">
+                                    </div>
+                                    <div class="book-form__comment">
+                                        <input type="text" placeholder="Комментарий">
+                                    </div>
+                                    <button class='btn room-item__btn'>Подтвердить</button>
                                 </div>
-                                <button class='btn room-item__btn' id='book-double'>Забронировать</button>
-                            </div>
-                            <div class="room-item__book-form room-item__book-form--hidden book-form">
-                                <div class="book-form__close book-form__close--hidden" id="close-booking-double"></div>
-                                <div class="book-form__check-in">
-                                    <input type="text" value="Заезд 12 Сентября" readonly>
-                                </div>
-                                <div class="book-form__check-out">
-                                    <input type="text" value="Выезд 14 Сентября" readonly>
-                                </div>
-                                <div class="book-form__days">
-                                    <input type="text" value="Кол.суток: 2" readonly>
-                                </div>
-                                <div class="book-form__cost">
-                                    <input type="text" value="Стоимость: 6300 руб" readonly>
-                                </div>
-                                <div class="book-form__name">
-                                    <input type="text" placeholder="Имя">
-                                </div>
-                                <div class="book-form__surname">
-                                    <input type="text" placeholder="Фамилия">
-                                </div>
-                                <div class="book-form__phone">
-                                    <input type="phone" placeholder="Телефон">
-                                </div>
-                                <div class="book-form__email">
-                                    <input type="e-mail" placeholder="e-mail">
-                                </div>
-                                <div class="book-form__comment">
-                                    <input type="text" placeholder="Комментарий">
-                                </div>
-                                <button class='btn room-item__btn'>Подтвердить</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-item" id="twin">
-                        <div class="room-item__photos">
-                            <div class="room-item__main-photo">
-                                <img src="img/photos/Twin/twin1.jpg" alt="">
-                            </div>
-                            <div class="room-item__price">3 500 руб./сут.</div>
-                            <div class="room-item__gallery owl-carousel" id="gallery-twin">
-                                <img src="img/photos/Twin/twin1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Twin/twin2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Twin/twin3.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
                             </div>
                         </div>
-                        <div class="room-item__info">
-                            <div class="room-item__title">TWIN</div>
-                            <div class="room-item__info-description">
-                                <div class="room-item__description">Комфортый номер для двоих. Идентичен номерам DOUBLE с&#160;одним отличием&#160;&#8212; кровати располагаются раздельно и&#160;их&#160;нельзя сдвинуть. Площадь номера: 11&#160;м&#178;.</div>
-                                <ul class="room-item__advantages">
-                                    <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
-                                    <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
-                                    <li class="room-item__advantages-item">Собственный душ и туалет</li>
-                                    <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
-                                    <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
-                                    <li class="room-item__advantages-item">Вентилятор</li>
-                                </ul>
-                                <div class="room-item__dates">
-                                    <div class="room-item__dates-date room-item__dates-date-check-in">
-                                        <div class="room-item__dates-date-caption">Заезд</div>
-                                        <input type="date">
-                                    </div>
-                                    <div class="room-item__dates-date room-item__dates-date-check-out">
-                                        <div class="room-item__dates-date-caption">Выезд</div>
-                                        <input type="date">
-                                    </div>
+                        <div class="room-item" id="twin">
+                            <div class="room-item__photos">
+                                <div class="room-item__main-photo">
+                                    <img src="img/photos/Twin/twin1.jpg" alt="">
                                 </div>
-                                <div class='price-calculator'>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
-                                        <div class="price-calculator__row-value">7 000 руб.</div>
-                                    </div>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">Скидка 10%</div>
-                                        <div class="price-calculator__row-value">-700 руб.</div>
-                                    </div>
-                                    <div class="price-calculator__row price-calculator__row--total">
-                                        <div class="price-calculator__row-descrription">Итого</div>
-                                        <div class="price-calculator__row-value">6 300 руб.</div>
-                                    </div>
+                                <div class="room-item__price">3 500 руб./сут.</div>
+                                <div class="room-item__gallery owl-carousel" id="gallery-twin">
+                                    <img src="img/photos/Twin/twin1.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Twin/twin2.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Twin/twin3.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
                                 </div>
-                                <button class='btn room-item__btn' id='book-twin'>Забронировать</button>
                             </div>
-                            <div class="room-item__book-form room-item__book-form--hidden book-form">
-                                <div class="book-form__close book-form__close--hidden" id="close-booking-twin"></div>
-                                <div class="book-form__check-in">
-                                    <input type="text" value="Заезд 12 Сентября" readonly>
+                            <div class="room-item__info">
+                                <div class="room-item__title">TWIN</div>
+                                <div class="room-item__info-description">
+                                    <div class="room-item__description">Комфортый номер для двоих. Идентичен номерам DOUBLE с&#160;одним отличием&#160;&#8212;
+                                        кровати располагаются раздельно и&#160;их&#160;нельзя сдвинуть. Площадь номера: 11&#160;м&#178;.</div>
+                                    <ul class="room-item__advantages">
+                                        <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
+                                        <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
+                                        <li class="room-item__advantages-item">Собственный душ и туалет</li>
+                                        <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
+                                        <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
+                                        <li class="room-item__advantages-item">Вентилятор</li>
+                                    </ul>
+                                    <div class="room-item__dates">
+                                        <div class="room-item__dates-date room-item__dates-date-check-in">
+                                            <div class="room-item__dates-date-caption">Заезд</div>
+                                            <input type="date">
+                                        </div>
+                                        <div class="room-item__dates-date room-item__dates-date-check-out">
+                                            <div class="room-item__dates-date-caption">Выезд</div>
+                                            <input type="date">
+                                        </div>
+                                    </div>
+                                    <div class='price-calculator'>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
+                                            <div class="price-calculator__row-value">7 000 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">Скидка 10%</div>
+                                            <div class="price-calculator__row-value">-700 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row price-calculator__row--total">
+                                            <div class="price-calculator__row-descrription">Итого</div>
+                                            <div class="price-calculator__row-value">6 300 руб.</div>
+                                        </div>
+                                    </div>
+                                    <button class='btn room-item__btn' id='book-twin'>Забронировать</button>
                                 </div>
-                                <div class="book-form__check-out">
-                                    <input type="text" value="Выезд 14 Сентября" readonly>
+                                <div class="room-item__book-form room-item__book-form--hidden book-form">
+                                    <div class="book-form__close book-form__close--hidden" id="close-booking-twin"></div>
+                                    <div class="book-form__check-in">
+                                        <input type="text" value="Заезд 12 Сентября" readonly>
+                                    </div>
+                                    <div class="book-form__check-out">
+                                        <input type="text" value="Выезд 14 Сентября" readonly>
+                                    </div>
+                                    <div class="book-form__days">
+                                        <input type="text" value="Кол.суток: 2" readonly>
+                                    </div>
+                                    <div class="book-form__cost">
+                                        <input type="text" value="Стоимость: 6300 руб" readonly>
+                                    </div>
+                                    <div class="book-form__name">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="book-form__surname">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                    <div class="book-form__phone">
+                                        <input type="phone" placeholder="Телефон">
+                                    </div>
+                                    <div class="book-form__email">
+                                        <input type="e-mail" placeholder="e-mail">
+                                    </div>
+                                    <div class="book-form__comment">
+                                        <input type="text" placeholder="Комментарий">
+                                    </div>
+                                    <button class='btn room-item__btn'>Подтвердить</button>
                                 </div>
-                                <div class="book-form__days">
-                                    <input type="text" value="Кол.суток: 2" readonly>
-                                </div>
-                                <div class="book-form__cost">
-                                    <input type="text" value="Стоимость: 6300 руб" readonly>
-                                </div>
-                                <div class="book-form__name">
-                                    <input type="text" placeholder="Имя">
-                                </div>
-                                <div class="book-form__surname">
-                                    <input type="text" placeholder="Фамилия">
-                                </div>
-                                <div class="book-form__phone">
-                                    <input type="phone" placeholder="Телефон">
-                                </div>
-                                <div class="book-form__email">
-                                    <input type="e-mail" placeholder="e-mail">
-                                </div>
-                                <div class="book-form__comment">
-                                    <input type="text" placeholder="Комментарий">
-                                </div>
-                                <button class='btn room-item__btn'>Подтвердить</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="room-item" id="triple">
-                        <div class="room-item__photos">
-                            <div class="room-item__main-photo">
-                                <img src="img/photos/Triple/triple1.jpg" alt="">
+                        <div class="room-item" id="triple">
+                            <div class="room-item__photos">
+                                <div class="room-item__main-photo">
+                                    <img src="img/photos/Triple/triple1.jpg" alt="">
+                                </div>
+                                <div class="room-item__price">3 500 руб./сут.</div>
+                                <div class="room-item__gallery owl-carousel" id="gallery-triple">
+                                    <img src="img/photos/Triple/triple1.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Triple/triple2.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Triple/triple3.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Triple/triple4.jpg" class="room-item__gallery-item" alt="">
+                                    <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
+                                </div>
                             </div>
-                            <div class="room-item__price">3 500 руб./сут.</div>
-                            <div class="room-item__gallery owl-carousel" id="gallery-triple">
-                                <img src="img/photos/Triple/triple1.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Triple/triple2.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Triple/triple3.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Triple/triple4.jpg" class="room-item__gallery-item" alt="">
-                                <img src="img/photos/Kitchen/kitchen1.jpg" class="room-item__gallery-item" alt="">
-                            </div>
-                        </div>
-                        <div class="room-item__info">
-                            <div class="room-item__title">TRIPLE</div>
-                            <div class="room-item__info-description">
-                                <div class="room-item__description">Уютный номер на&#160;три кровати. Подойдет как для семьи, так и&#160;для небольшой дружной компании. Площадь номера: 18&#160;м&#178;.</div>
-                                <ul class="room-item__advantages">
-                                    <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
-                                    <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
-                                    <li class="room-item__advantages-item">Собственный душ и туалет</li>
-                                    <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
-                                    <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
-                                    <li class="room-item__advantages-item">Письменный стол</li>
-                                    <li class="room-item__advantages-item">Вентилятор</li>
-                                </ul>
-                                <div class="room-item__dates">
-                                    <div class="room-item__dates-date room-item__dates-date-check-in">
-                                        <div class="room-item__dates-date-caption">Заезд</div>
-                                        <input type="date">
+                            <div class="room-item__info">
+                                <div class="room-item__title">TRIPLE</div>
+                                <div class="room-item__info-description">
+                                    <div class="room-item__description">Уютный номер на&#160;три кровати. Подойдет как для семьи, так и&#160;для небольшой дружной
+                                        компании. Площадь номера: 18&#160;м&#178;.</div>
+                                    <ul class="room-item__advantages">
+                                        <li class="room-item__advantages-item">Телевизор с плоским экраном</li>
+                                        <li class="room-item__advantages-item">Бесплатный Wi-Fi</li>
+                                        <li class="room-item__advantages-item">Собственный душ и туалет</li>
+                                        <li class="room-item__advantages-item">Фен и туалетные принадлежности</li>
+                                        <li class="room-item__advantages-item">Шкаф и прикроватные тумбочки</li>
+                                        <li class="room-item__advantages-item">Письменный стол</li>
+                                        <li class="room-item__advantages-item">Вентилятор</li>
+                                    </ul>
+                                    <div class="room-item__dates">
+                                        <div class="room-item__dates-date room-item__dates-date-check-in">
+                                            <div class="room-item__dates-date-caption">Заезд</div>
+                                            <input type="date">
+                                        </div>
+                                        <div class="room-item__dates-date room-item__dates-date-check-out">
+                                            <div class="room-item__dates-date-caption">Выезд</div>
+                                            <input type="date">
+                                        </div>
                                     </div>
-                                    <div class="room-item__dates-date room-item__dates-date-check-out">
-                                        <div class="room-item__dates-date-caption">Выезд</div>
-                                        <input type="date">
+                                    <div class='price-calculator'>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
+                                            <div class="price-calculator__row-value">7 000 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row">
+                                            <div class="price-calculator__row-descrription">Скидка 10%</div>
+                                            <div class="price-calculator__row-value">-700 руб.</div>
+                                        </div>
+                                        <div class="price-calculator__row price-calculator__row--total">
+                                            <div class="price-calculator__row-descrription">Итого</div>
+                                            <div class="price-calculator__row-value">6 300 руб.</div>
+                                        </div>
                                     </div>
+                                    <button class='btn room-item__btn' id='book-triple'>Забронировать</button>
                                 </div>
-                                <div class='price-calculator'>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">3 500 Х 2 суток</div>
-                                        <div class="price-calculator__row-value">7 000 руб.</div>
+                                <div class="room-item__book-form room-item__book-form--hidden book-form">
+                                    <div class="book-form__close book-form__close--hidden" id="close-booking-triple"></div>
+                                    <div class="book-form__check-in">
+                                        <input type="text" value="Заезд 12 Сентября" readonly>
                                     </div>
-                                    <div class="price-calculator__row">
-                                        <div class="price-calculator__row-descrription">Скидка 10%</div>
-                                        <div class="price-calculator__row-value">-700 руб.</div>
+                                    <div class="book-form__check-out">
+                                        <input type="text" value="Выезд 14 Сентября" readonly>
                                     </div>
-                                    <div class="price-calculator__row price-calculator__row--total">
-                                        <div class="price-calculator__row-descrription">Итого</div>
-                                        <div class="price-calculator__row-value">6 300 руб.</div>
+                                    <div class="book-form__days">
+                                        <input type="text" value="Кол.суток: 2" readonly>
                                     </div>
+                                    <div class="book-form__cost">
+                                        <input type="text" value="Стоимость: 6300 руб" readonly>
+                                    </div>
+                                    <div class="book-form__name">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="book-form__surname">
+                                        <input type="text" placeholder="Фамилия">
+                                    </div>
+                                    <div class="book-form__phone">
+                                        <input type="phone" placeholder="Телефон">
+                                    </div>
+                                    <div class="book-form__email">
+                                        <input type="e-mail" placeholder="e-mail">
+                                    </div>
+                                    <div class="book-form__comment">
+                                        <input type="text" placeholder="Комментарий">
+                                    </div>
+                                    <button class='btn room-item__btn'>Подтвердить</button>
                                 </div>
-                                <button class='btn room-item__btn' id='book-triple'>Забронировать</button>
-                            </div>
-                            <div class="room-item__book-form room-item__book-form--hidden book-form">
-                                <div class="book-form__close book-form__close--hidden" id="close-booking-triple"></div>
-                                <div class="book-form__check-in">
-                                    <input type="text" value="Заезд 12 Сентября" readonly>
-                                </div>
-                                <div class="book-form__check-out">
-                                    <input type="text" value="Выезд 14 Сентября" readonly>
-                                </div>
-                                <div class="book-form__days">
-                                    <input type="text" value="Кол.суток: 2" readonly>
-                                </div>
-                                <div class="book-form__cost">
-                                    <input type="text" value="Стоимость: 6300 руб" readonly>
-                                </div>
-                                <div class="book-form__name">
-                                    <input type="text" placeholder="Имя">
-                                </div>
-                                <div class="book-form__surname">
-                                    <input type="text" placeholder="Фамилия">
-                                </div>
-                                <div class="book-form__phone">
-                                    <input type="phone" placeholder="Телефон">
-                                </div>
-                                <div class="book-form__email">
-                                    <input type="e-mail" placeholder="e-mail">
-                                </div>
-                                <div class="book-form__comment">
-                                    <input type="text" placeholder="Комментарий">
-                                </div>
-                                <button class='btn room-item__btn'>Подтвердить</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="reviews" id="reviews">
-            <div class="reviews__inner">
-                <div class="reviews__reviews-list reviews-list owl-carousel" id='reviews-list'>
-                    <div class="reviews-list__item">
-                        <div class="reviews-list__item-author">Ирина Николаевна</div>
-                        <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу. Удобно,
-                            что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить что-то
-                            в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю, что возвращаясь
-                            в Питер, будем останавливаться здесь.»</div>
-                        <div class="reviews-list__item-raiting">
-                            <div class="reviews-list__item-raiting-company"></div>
-                            <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+            <div class="reviews" id="reviews">
+                <div class="reviews__inner">
+                    <div class="reviews__reviews-list reviews-list owl-carousel" id='reviews-list'>
+                        <div class="reviews-list__item">
+                            <div class="reviews-list__item-author">Ирина Николаевна</div>
+                            <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу.
+                                Удобно, что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить
+                                что-то в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю,
+                                что возвращаясь в Питер, будем останавливаться здесь.»</div>
+                            <div class="reviews-list__item-raiting">
+                                <div class="reviews-list__item-raiting-company"></div>
+                                <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="reviews-list__item">
-                        <div class="reviews-list__item-author">Ирина Николаевна</div>
-                        <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу. Удобно,
-                            что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить что-то
-                            в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю, что возвращаясь
-                            в Питер, будем останавливаться здесь.»</div>
-                        <div class="reviews-list__item-raiting">
-                            <div class="reviews-list__item-raiting-company"></div>
-                            <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+                        <div class="reviews-list__item">
+                            <div class="reviews-list__item-author">Ирина Николаевна</div>
+                            <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу.
+                                Удобно, что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить
+                                что-то в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю,
+                                что возвращаясь в Питер, будем останавливаться здесь.»</div>
+                            <div class="reviews-list__item-raiting">
+                                <div class="reviews-list__item-raiting-company"></div>
+                                <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="reviews-list__item">
-                        <div class="reviews-list__item-author">Ирина Николаевна</div>
-                        <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу. Удобно,
-                            что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить что-то
-                            в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю, что возвращаясь
-                            в Питер, будем останавливаться здесь.»</div>
-                        <div class="reviews-list__item-raiting">
-                            <div class="reviews-list__item-raiting-company"></div>
-                            <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+                        <div class="reviews-list__item">
+                            <div class="reviews-list__item-author">Ирина Николаевна</div>
+                            <div class="reviews-list__item-content">«Порадовал очень душевный персонал: вежливый, приветливый, готовый помочь и пойти навстречу.
+                                Удобно, что есть кухня, можно воспользоваться посудой, заварить себе кофе, погреть еду, оставить
+                                что-то в холодильнике. Расположение просто отличное - 5 минут до Эрмитажа! В общем, думаю,
+                                что возвращаясь в Питер, будем останавливаться здесь.»</div>
+                            <div class="reviews-list__item-raiting">
+                                <div class="reviews-list__item-raiting-company"></div>
+                                <div class="reviews-list__item-raiting-value">8,4 / 10</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -394,7 +402,8 @@
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Можно ли заселяться с животными?</div>
-                        <div class="faq__question-answer">Иногда мы&#160;идем на&#160;встречу при условии соблюдения тишины и&#160;порядка. Обычно это касается маленьких животных в&#160;переносках.</div>
+                        <div class="faq__question-answer">Иногда мы&#160;идем на&#160;встречу при условии соблюдения тишины и&#160;порядка. Обычно это касается
+                            маленьких животных в&#160;переносках.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли завтрак?</div>
@@ -406,28 +415,35 @@
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Как до нас добраться?</div>
-                        <div class="faq__question-answer">Отель находится по&#160;адресу: Санкт-Петербург, Большая Конюшенная улица, дом 17. Нужно пройти к&#160;арке и&#160;набрать&#160;13, для того чтобы войти во&#160;двор. После второй арки необходимо повернуть направо. Код от&#160;входной двери: 13.</div>
+                        <div class="faq__question-answer">Отель находится по&#160;адресу: Санкт-Петербург, Большая Конюшенная улица, дом 17. Нужно пройти к&#160;арке
+                            и&#160;набрать&#160;13, для того чтобы войти во&#160;двор. После второй арки необходимо повернуть
+                            направо. Код от&#160;входной двери: 13.</div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли альтернативное бронирование?</div>
-                        <div class="faq__question-answer">Да, мы&#160;рассматриваем варианты альтернативного бронирования. Пишите нам на&#160;почту <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a></div>
+                        <div class="faq__question-answer">Да, мы&#160;рассматриваем варианты альтернативного бронирования. Пишите нам на&#160;почту
+                            <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a>
+                        </div>
                     </div>
                     <div class="faq__question">
                         <div class="faq__question-question">Есть ли условия для людей с ограниченными возможностями?</div>
-                        <div class="faq__question-answer">К&#160;сожалению, архитектура дома не&#160;предполагает установку пандусов и&#160;дополнительных приспособлений. Принять вас будет затруднительно.</div>
+                        <div class="faq__question-answer">К&#160;сожалению, архитектура дома не&#160;предполагает установку пандусов и&#160;дополнительных
+                            приспособлений. Принять вас будет затруднительно.</div>
                     </div>
                 </div>
-                <div class="faq__back"><a href="#rooms">Вернуться к номерам</a></div>
+                <div class="btn-back faq__back">
+                    <a href="#rooms">Вернуться к номерам</a>
+                </div>
             </div>
         </div>
         <div class="map-and-contacts" id="contacts">
             <div class="map-and-contacts__map map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.591950447831!2d30.321120116143472!3d59.93891288187628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fceae1c83%3A0xe98045a979b09260!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522509242607"
-                    width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="map-and-contacts__contacts contacts">
                 <div class="contacts__inner">
-                    <div class="contacts__item contacts__item--address">Большая Конюшенная 17</div>
+                    <div class="contacts__item contacts__item--address">Большая Конюшенная, 17</div>
                     <div class="contacts__item contacts__item--phones">
                         <a href="tel:+7 (812) 272-64-93">+7 (812) 272-64-93</a>
                         <a href="tel:+7 (921) 378-73-65">+7 (921) 378-73-65</a>
@@ -435,6 +451,9 @@
                     <div class="contacts__item contacts__item--mail">
                         <a href='mailto:mail@baskof-hotel.com'>mail@baskof-hotel.com</a>
                     </div>
+                </div>
+                <div class="btn-back contacts__back">
+                    <a href="#rooms">Вернуться к номерам</a>
                 </div>
             </div>
         </div>

@@ -29,6 +29,34 @@ html{
       margin: 0;
   }
 
+  input[type="date"]{
+    -webkit-appearance: none;
+  }
+  /* Removes the clear button from date inputs */
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  /* Removes the spin button */
+  input[type=date]::-webkit-inner-spin-button,
+  input[type=date]::-webkit-outer-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    //margin: 0;
+  }
+
+  /* Always display the drop down caret */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 10px;
+    -webkit-appearance: none;
+  }
+  
   .owl-carousel .owl-item.active {
     z-index: 2;
+  }
+
+  .room-item--book .owl-carousel.owl-loaded.room-item__gallery {
+    display: none;
   }

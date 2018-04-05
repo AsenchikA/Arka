@@ -1,12 +1,29 @@
 .map-and-contacts {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: @screen-lg) {
+        display: block;
+    }
+
     &__map {
-        display: none;
+        order: 2;
+        width: 100%;
         @media (min-width: @screen-lg) {
             display: block;
+            height: 600px;
+        }
+        & iframe {
+            height: 400px;
+            @media (min-width: @screen-lg) {
+                height: 600px;
+            }
         }
     }
     &__contacts {
+        order: 1;
+        width: 100%;
         @media (min-width: @screen-lg) {
             position: absolute;
             top: 165px;

@@ -67,7 +67,7 @@ gulp.task('html', function() {
 // ЗАДАЧА: Копирование изображений
 gulp.task('img', function () {
   return gulp.src([
-        dirs.source + '/img/**/*.{gif,png,jpg,JPG,jpeg,svg}'  // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+        dirs.source + '/img/**/*.{gif,png,jpg,JPG,jpeg,svg,ico}'  // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       ],
       {since: gulp.lastRun('img')}                          // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -224,7 +224,7 @@ gulp.task('serve', gulp.series('build', function() {
   );
 
   gulp.watch(                                               // следим за изображениями
-    dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',
+    dirs.source + '/img/*.{gif,png,jpg,jpeg,svg,ico}',
     gulp.series('img', reloader)                            // при изменении оптимизируем, копируем и обновляем в браузере
   );
 

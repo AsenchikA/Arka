@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:100,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Arka - мини-отель</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon-152x152.png" sizes="152x152">
 </head>
 
 <body>
@@ -174,7 +180,7 @@
                                     <div class="book-form__comment">
                                         <input type="text" placeholder="Комментарий">
                                     </div>
-                                    <button class='btn room-item__btn'>Подтвердить</button>
+                                    <button class='btn room-item__btn' id='confirm-btn-double'>Подтвердить</button>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +265,7 @@
                                     <div class="book-form__comment">
                                         <input type="text" placeholder="Комментарий">
                                     </div>
-                                    <button class='btn room-item__btn'>Подтвердить</button>
+                                    <button class='btn room-item__btn' id='confirm-btn-twin'>Подтвердить</button>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +352,7 @@
                                     <div class="book-form__comment">
                                         <input type="text" placeholder="Комментарий">
                                     </div>
-                                    <button class='btn room-item__btn'>Подтвердить</button>
+                                    <button class='btn room-item__btn' id='confirm-btn-triple'>Подтвердить</button>
                                 </div>
                             </div>
                         </div>
@@ -458,6 +464,12 @@
             </div>
         </div>
     </main>
+    <div class="modal modal--hidden" id='modal'>
+        <div class="modal__inner">
+            <div class="modal__title">Ваша заявка принята!</div>
+            <div class="modal__text">Администратор свяжется с&#160;вами в&#160;ближайшее время.</div>
+        </div>
+    </div>
     <script src="js/script.min.js"></script>
 </body>
 

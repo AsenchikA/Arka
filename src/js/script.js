@@ -150,4 +150,12 @@ $(document).ready(function () {
     var numberType = e.target.id.slice(14);
     toggleClassesRoom(numberType);
   });
+  $('[id ^= confirm-btn]').on('click', function (e) {
+    var numberType = e.target.id.slice(12);
+    toggleClassesRoom(numberType);
+    $('#modal')[0].classList.remove('modal--hidden');
+    setTimeout(function() {
+      $('#modal')[0].classList.add('modal--hidden')
+    }, 3000);
+  })
 });
